@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right bottom, #ff70a6, #ff9770);
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#root::before,
+#root::after {
+  content: "";
+  flex-grow: 1;
+}
+#main-container {
+  background: #fff;
+  margin: 0 auto;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+}
+
+#search-bar:focus {
+  outline: none;
+  border: 1px solid #ff0060ed;
+}
+
+#search-bar {
+  border: 1px solid #ff006044;
+  border-radius: 2px;
+  margin-right: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+#icon-add {
+  color: #ff70a6;
+}
+
+#top-container {
+  border-bottom: 1px solid #ff9770;
+  padding: 30px 30px 10px 30px;
+}
+
+#bottom-container {
+  padding: 0px 30px;
+  height: 300px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#bottom-container ul li {
+  margin-top: 5px;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottom-container ul li div i {
+  margin: 0 2px;
+}
+
+.fa-pen-to-square {
+  color: #ff9770;
+}
+
+.fa-trash {
+  color: #ff70a6;
+}
+
+.fa-square-check {
+  color: #58d130;
+}
