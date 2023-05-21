@@ -40,7 +40,10 @@ input.custom-input {
 }
 
 #top-container {
-  padding: 30px 30px 10px 30px;
+  padding: 15px 30px 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #nav-container {
@@ -102,4 +105,8 @@ button.custom-button {
 
 #button-save {
   margin-top: 10px;
+}
+
+#icon-back {
+  color: #ff9770;
 }

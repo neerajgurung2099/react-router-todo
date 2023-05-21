@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useContext, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
@@ -6,6 +6,7 @@ import Root from "./routes/root";
 import All from "./pages/All";
 import Create from "./pages/Create";
 import Index from "./pages";
+import { action } from "./pages/Create";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       {
         path: "Create/",
         element: <Create />,
+        action: action,
       },
       {
         path: `/`,
@@ -33,7 +35,6 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

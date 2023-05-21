@@ -6,9 +6,7 @@ export default function Index() {
         <nav>
           <ul>
             <li>
-              <a>
-                <NavLink to={`All`}>All</NavLink>
-              </a>
+              <NavLink to={`All`}>All</NavLink>
             </li>
             <li>
               <NavLink to={`Pending`}>Pending</NavLink>
