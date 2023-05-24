@@ -6,11 +6,11 @@ import Root from "./routes/root";
 import All from "./pages/All";
 import Create from "./pages/Create";
 import Index from "./pages";
-import { action } from "./pages/Create";
+import { action as createAction } from "./pages/Create";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/",
     element: <Root />,
     children: [
       {
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "Create/",
         element: <Create />,
-        action: action,
+        action: createAction,
       },
       {
         path: `/`,
